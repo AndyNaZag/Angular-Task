@@ -1,0 +1,13 @@
+.line {
+    height: 0.5rem;
+    background: rgb(143,1,1);
+    background: linear-gradient(90deg, rgba(143,1,1,1) 0%, rgba(228,205,205,1) 49%, rgba(148,0,0,1) 100%);
+}
+
+.bc-container {
+    margin: 10px 7em;
+}
+
+a {
+    color:rgb(170, 7, 7);
+}

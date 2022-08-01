@@ -1,0 +1,23 @@
+.searcher-container {
+    width: 20rem;
+}
+
+.btn-container {
+    margin: 20px 0;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 40%;
+}
+
+.nav-container {
+    margin: 40px 0;
+}
+
+.subtitle {
+    color: rgb(182, 4, 4);
+    font-weight: bold;
+}

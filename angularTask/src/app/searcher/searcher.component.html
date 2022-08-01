@@ -1,0 +1,21 @@
+<div class="searcher-container">
+    
+    
+    <div class="nav-container">
+        <div class="navbox" *ngFor = "let nb of optionList">
+            <label for="inputState" class="form-label">NAVIGATION NAME</label>
+            <select id="inputState" class="form-select">
+              <option selected></option>
+              <option>{{nb.option1}}</option>
+              <option>{{nb.option2}}</option>
+              <option>{{nb.option3}}</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="btn-container">
+        <button type="button" class="btn btn-danger">SEARCH</button>
+        <button type="button" class="btn btn-secondary">RESET</button>
+    </div>
+</div>
+

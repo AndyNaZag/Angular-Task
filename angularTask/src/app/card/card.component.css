@@ -1,0 +1,25 @@
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4, h5 {
+    font-weight: bold;
+}
+
+.card-img {
+    width: 25%;
+    height: fit-content;
+    align-self: center;
+}
+
+.red {
+    color: red;
+}
+
+.card {
+    border-left: none;
+    border-right: none;
+}
+

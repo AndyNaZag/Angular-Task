@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="page-container">
+  <div>
+    <div class="navbox">
+      <label for="inputState" class="form-label subtitle">APPLICATION TYPE</label>
+      <select id="inputState" class="form-select">
+        <option selected></option>
+        <option>...</option>
+      </select>
+  </div>
+  <div class="navbox">
+      <label for="inputState" class="form-label subtitle">PRODUCT TYPE</label>
+      <select id="inputState" class="form-select">
+        <option selected></option>
+        <option>...</option>
+      </select>
+  </div>
+  <div class="btn-container">
+      <button type="button" class="btn btn-danger">SEARCH</button>
+      <button type="button" class="btn btn-secondary">RESET</button>
+  </div>
+  <div class="navbox">
+      <label for="searchByUPC" class="form-label">SEARCH BY UPC</label>
+      <input type="text" class="form-control" id="searchByUPC" placeholder="Enter Text Here">
+  </div>
+  <div class="navbox">
+      <label for="searchByUPC" class="form-label">SEARCH BY PART NUMBER</label>
+      <input type="text" class="form-control" name="search" [(ngModel)]="searchNumber" pattern="[0-9]+">
+  </div>
+  <app-searcher></app-searcher>
+  </div>
+  <div>    
+    <app-card *ngFor = "let product of pageSlice | filter: searchNumber " [data]="product"></app-card>
+    <mat-paginator  showFirstLastButtons 
+                  [pageSize]="4"
+                  [length]="this.productList.length"
+                  (page)="OnPageChange($event)">
+    </mat-paginator>    
+  </div>  
+</div>
+
